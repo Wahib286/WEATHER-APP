@@ -34,13 +34,13 @@ const searchTab = document.querySelector("[data-searchWeather]");
 const userContainer = document.querySelector(".weather-container");
 
 const grantAccessContainer = document.querySelector(".grant-location-container");
-const searchForm = document.querySelector("[data-seachForm]");
+const searchForm = document.querySelector("[data-searchForm]");
 const loadingScreen = document.querySelector(".loading-container");
 const userInfoContainer = document.querySelector(".user-info-container");
 
 //initial variable needed
 let currentTab = userTab;
-const API_KEY = "3b660790a882d954a35fdd870a5eb3e3";
+const API_KEY = "d33bb3c7b563d741333f89d29db83574";
 currentTab.classList.add("current-tab");
 getfromSessionStorage();
 
@@ -53,7 +53,7 @@ function switchTab(clickedTab){
 
     if(!searchForm.classList.contains("active")){
         searchForm.classList.add("active");
-        userContainer.classList.remove("active");
+        userInfoContainer.classList.remove("active");
         grantAccessContainer.classList.remove("active");
     }
     else{
